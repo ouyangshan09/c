@@ -1,11 +1,12 @@
 /**
  * 路径抽象类
  * */
-import Element from './element';
+import SvgElement from './element';
 
-class Path extends Element {
+class Path extends SvgElement {
     constructor () {
-        super();
+        super('path');
+        this.state = {};
     }
 }
 
