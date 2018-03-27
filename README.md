@@ -1,11 +1,7 @@
-# 前端项目启动器(包含多语言)
+# 前端Svg图形库
 
 - javascript
-- typescript
-- react + js
-- react + ts
-- vue + js
-- vue + ts
+- Svg
 
 ## 快速开始
 
