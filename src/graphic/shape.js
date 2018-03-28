@@ -3,11 +3,60 @@
  * @author Ouyang
  * */
 import SvgElement from './element';
+// import Utils from '../core/utils';
 
 class Shape extends SvgElement {
     constructor (name) {
         super(name);
         this.state = {};
+        this.transform = {
+            translate: null,
+            rotate: null,
+            scale: null,
+            matrix: null
+        };
+    }
+
+    /**
+     * 变换
+     * */
+    translate () {
+        //
+    }
+
+    /**
+     * 旋转
+     * */
+    rotate () {
+        //
+    }
+
+    /**
+     * 缩放
+     * */
+    scale () {
+        //
+    }
+
+    /**
+     * 倾斜
+     * */
+    skew () {
+        //
+    }
+
+    /**
+     * 绘制
+     * */
+    stroke () {
+        //
+    }
+
+    /**
+     * 填充
+     * */
+    fill () {
+        //
     }
 }
 
