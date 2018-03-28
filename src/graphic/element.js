@@ -23,6 +23,21 @@ class Element {
         return this.node;
     }
 
+    getBoundaryBox () {
+        let box;
+        try {
+            box = '';
+        } catch (e) {
+            box = {
+                x: this.node.clientLeft,
+                y: this.node.clientTop,
+                width: this.node.clientWidth,
+                height: this.node.clientHeight
+            };
+        }
+        return box;
+    }
+
     setAttar (attribute, value) {
         const self = this;
         if (Utils.isObject(attribute)) {
