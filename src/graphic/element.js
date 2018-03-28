@@ -26,7 +26,7 @@ class Element {
     getBoundaryBox () {
         let box;
         try {
-            box = '';
+            box = this.node.getBBox();
         } catch (e) {
             box = {
                 x: this.node.clientLeft,
@@ -36,6 +36,28 @@ class Element {
             };
         }
         return box;
+    }
+
+    setOpacity (value) {
+        this.node.setAttribute('opacity', value);
+    }
+
+    getOpacity () {
+        const opacity = this.node.getAttribute('opacity');
+        return opacity ? +opacity : 1;
+    }
+
+    setVisible (value) {
+        if (value) {
+            this.node.removeAttribute('display');
+        } else {
+            this.node.setAttribute('display', value);
+        }
+        return this;
+    }
+
+    getVisible () {
+        return this.node.getAttribute('display');
     }
 
     setAttar (attribute, value) {
