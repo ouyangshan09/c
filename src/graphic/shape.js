@@ -2,10 +2,10 @@
  * Svg形状抽象基类
  * @author Ouyang
  * */
-import SvgElement from './element';
+import Element from './element';
 // import Utils from '../core/utils';
 
-class Shape extends SvgElement {
+class Shape extends Element {
     constructor (name) {
         super(name);
         this.state = {};
