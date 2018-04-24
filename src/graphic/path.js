@@ -1,9 +1,9 @@
 /**
  * 路径抽象类
  * */
-import SvgElement from './element';
+import Shape from './shape';
 
-class Path extends SvgElement {
+class Path extends Shape {
     constructor () {
         super('path');
         this.state = {};
