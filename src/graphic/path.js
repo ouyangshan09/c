@@ -116,8 +116,6 @@ class Path extends Shape {
         super('path');
         this.state = {};
     }
-
-
 }
 
 export { Path, PathDrawer };
