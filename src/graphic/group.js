@@ -7,6 +7,18 @@ class Group extends Element {
     constructor () {
         super('Group');
     }
+
+    add () {
+        //
+    }
+
+    addGroup () {
+        //
+    }
+
+    addShape () {
+        //
+    }
 }
 
 export default Group;
